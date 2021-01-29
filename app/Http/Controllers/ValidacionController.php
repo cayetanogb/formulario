@@ -17,9 +17,9 @@ class ValidacionController extends Controller
 
         $message = [
             'required' => 'Este campo es obligatorio',
-            'before: -18 years' => 'Debes ser mayor de edad',
-            'different: nombre' => 'La contraseña no puede contener el nombre',
-            'min: 8' => 'La contraseña debe ser mayor a 8 caracteres',
+            'before' => 'Debes ser mayor de edad',
+            'different' => 'La contraseña no puede contener el nombre',
+            'min' => 'La contraseña debe ser mayor a 8 caracteres',
         ];
 
         $this->validate($request, $validate, $message);
